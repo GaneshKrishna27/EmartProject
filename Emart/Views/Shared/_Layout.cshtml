@@ -3,9 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    
     <title>@ViewData["Title"] - Emart</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    
+
 </head>
 <body>
     <header>
@@ -27,33 +34,42 @@
                         </li>
                         <li class="nav-item">
                             <form class="form-inline my-2 my-lg-0">
-                                
+
                                 <input class="form-control mr-sm-2 " type="text" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                    
+
                             </form>
                         </li>
-                        <li class="nav-item dropdown ml-auto">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                UserAccount
-                            </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Categories</a>
+
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Categories</a>
                                 <a class="dropdown-item" href="#">Cart</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> Logout</a>
+                                <a class="dropdown-item" > Logout</a>
                             </div>
                         </li>
+                        <li class="nav-item ml-auto">
+                        <a class="nav-link " asp-area="" asp-controller="Emart" asp-action="BuyerLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+                        @*<ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>*@
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+        </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
