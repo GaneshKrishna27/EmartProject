@@ -64,7 +64,7 @@ namespace Emart.Controllers
             {
                 HttpContext.Session.SetString("Bname", b.Bname);
                 // HttpContext.Session.SetString("lastLogin", DateTime.Now.ToString());
-                return RedirectToAction("CreateDashBoard");
+                return RedirectToAction("_Layout");
             }
 
         }
@@ -111,10 +111,16 @@ namespace Emart.Controllers
             {
                 HttpContext.Session.SetString("Sname", s.Sname);
                 // HttpContext.Session.SetString("lastLogin", DateTime.Now.ToString());
-                return RedirectToAction("CreateDashBoard");
+                return RedirectToAction("_Layout");
             }
 
         }
+
+        public IActionResult SellerBuyer()
+        {
+            return View();
+        }
+
 
 
 
