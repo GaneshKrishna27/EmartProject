@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Emart.Models
 {
-    public class Seller
+    public class SellerCreate
     {
         [Key]
         [Required(ErrorMessage = "Please Enter Valid Id")]
@@ -35,6 +36,6 @@ namespace Emart.Models
         public string Postal_Address { get; set; }
         [RegularExpression(@"[6-9]\d{9}", ErrorMessage = "Please Enter Valid Mobile no")]
         public string Mobile { get; set; }
-        public string Photopath { get; set; }
+        public IFormFile Photopath { get; set; }
     }
 }
