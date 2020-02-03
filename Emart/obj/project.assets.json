@@ -8263,19 +8263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\karthu\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karthu\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\Emart.csproj",
+      "projectUniqueName": "D:\\EmartProject\\Emart\\Emart.csproj",
       "projectName": "Emart",
-      "projectPath": "C:\\Users\\karthu\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\Emart.csproj",
-      "packagesPath": "C:\\Users\\karthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karthu\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\obj\\",
+      "projectPath": "D:\\EmartProject\\Emart\\Emart.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "D:\\EmartProject\\Emart\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\karthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8340,7 +8340,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

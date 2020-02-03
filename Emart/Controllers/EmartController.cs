@@ -14,8 +14,8 @@ namespace Emart.Controllers
     {
         public readonly BuyerContext _context;
         public readonly SellerContext _context1;
-        public readonly IWebHostEnvironment hostingEnvironment;
-        public EmartController(BuyerContext context, SellerContext context1)
+        private readonly IWebHostEnvironment hostingEnvironment;
+        public EmartController(BuyerContext context, SellerContext context1, IWebHostEnvironment hostingEnvironment)
         {
             this._context = context;
             this._context1 = context1;
@@ -178,13 +178,17 @@ namespace Emart.Controllers
                 };
                 _context.Add(newseller);
                 _context.SaveChanges();
-                return RedirectToAction("Details", new { id = newseller.id });
+                return RedirectToAction("Details", new {Sid = newseller.Sid });
             }
             else
                 return View();
         }
 
-
+        public ActionResult Details(int Sid)
+        {
+            Seller seller1 = _context1.seller.FirstOrDefault(m => m.Sid == Sid);
+            return View(seller1);
+        }
 
 
         //public ActionResult Index()
@@ -193,10 +197,11 @@ namespace Emart.Controllers
         //}
 
         // GET: Emart/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
+
 
         // GET: Emart/Create
         //public ActionResult Create()
@@ -205,21 +210,21 @@ namespace Emart.Controllers
         //}
 
         // POST: Emart/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add insert logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
         // GET: Emart/Edit/5
         public ActionResult Edit(int id)

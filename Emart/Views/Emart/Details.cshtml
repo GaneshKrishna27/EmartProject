@@ -1,0 +1,50 @@
+﻿@model Emart.Models.Seller
+@{
+    ViewData["Title"] = "Details";
+    var Photopath = "~/images/" + (Model.Photopath ?? "Seller.jpg");
+}
+
+<h1>Details</h1>
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Sname</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@Photopath" asp-append-version="true" />
+
+                <h4>Seller ID : @Model.Sid</h4>
+                <h4>Seller Name : @Model.Sname</h4>
+                <h4>Password : @Model.Spwd</h4>
+                <h4>Company Name : @Model.Companyname</h4>
+                <h4>Email : @Model.Email</h4>
+                <h4>Gstin : @Model.Gstin</h4>
+                <h4>Back_Details : @Model.Bank_Details</h4>
+                <h4>Postal_Address : @Model.Postal_Address</h4>
+                <h4>Mobile : @Model.Mobile</h4>
+
+
+
+
+
+
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Emart" asp-action="DisplayItem" class="btn btn-primary">Display</a>
+                <a asp-controller="Emart" asp-action="AddItem" class="btn btn-primary">AddItem</a>
+                <a asp-controller="Emart" asp-action="AddCart" class="btn btn-primary">AddCart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

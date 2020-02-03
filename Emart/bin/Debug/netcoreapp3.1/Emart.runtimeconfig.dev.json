@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\karthu\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\karthu\\.nuget\\packages"
+      "C:\\Users\\Dell\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Dell\\.nuget\\packages"
     ]
   }
 }

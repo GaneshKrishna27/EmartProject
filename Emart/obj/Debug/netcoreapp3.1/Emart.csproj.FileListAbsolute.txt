@@ -286,3 +286,4 @@ C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debu
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Emart.csproj.CopyComplete
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Emart.dll
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Emart.pdb
+D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Razor\Views\Emart\Details.cshtml.g.cs
