@@ -7,5 +7,8 @@ namespace Emart.Models
 {
     public class Category
     {
+        public int CId { get; set; }
+        public string Cname { get; set; }
+        public string Desc { get; set; }
     }
 }
