@@ -141,7 +141,6 @@ D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Emart.Views.pdb
 D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Emart.csproj.CopyComplete
 D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Emart.dll
 D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Emart.pdb
-D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Razor\Views\Emart\SellerBuyer.cshtml.g.cs
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\karthu\Downloads\EmartProject-master\EmartProject-master\Emart\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -434,3 +433,5 @@ C:\Users\dilee\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug
 C:\Users\dilee\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Emart.csproj.CopyComplete
 C:\Users\dilee\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Category.cshtml.g.cs
 C:\Users\dilee\Downloads\EmartProject-master\EmartProject-master\Emart\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SellerBuyer.cshtml.g.cs
+D:\EmartProject\Emart\obj\Debug\netcoreapp3.1\Razor\Views\SellerBuyer\Index.cshtml.g.cs

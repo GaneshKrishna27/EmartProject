@@ -120,10 +120,10 @@ namespace Emart.Controllers
 
         }
 
-        public IActionResult SellerBuyer()
-        {
-            return View();
-        }
+        //public IActionResult SellerBuyer()
+        //{
+        //    return View();
+        //}
 
         //**********************************************
 

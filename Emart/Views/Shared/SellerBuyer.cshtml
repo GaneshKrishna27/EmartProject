@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    
+
+
     <title>@ViewData["Title"] - Emart</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    
-    </head>
+
+</head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <h6 class="navbar-brand" asp-area=""><img src="~/Images/Emart.png"width="100" height="35" alt=""></h6> 
-                
+                <h6 class="navbar-brand" asp-area=""><img src="~/Images/Emart.png" width="100" height="35" alt=""></h6>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,12 +53,12 @@
                                 <a class="dropdown-item" href="#"> Home Appliances</a>
                             </div>
                         </li>
-                        <li class="nav-item ml-auto">
-                        <a class="nav-link " asp-area="" asp-controller="SellerBuyer" asp-action="Index"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-                        </li>
+                        @*<li class="nav-item ml-auto">
+                            <a class="nav-link " asp-area="" asp-controller="Emart" asp-action="SellerBuyer"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>*@
                         @*<ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        </ul>*@
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>*@
 
                     </ul>
                 </div>
@@ -68,12 +68,12 @@
 
 
 
-   
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        </div>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">

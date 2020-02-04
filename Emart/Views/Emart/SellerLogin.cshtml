@@ -1,6 +1,7 @@
 ﻿@model Emart.Models.Seller
 
 @{
+    Layout = "SellerBuyer";
     ViewData["Title"] = "SellerLogin";
 }
 
@@ -10,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="SellerLogin">
+        <form asp-action="SellerLogin" asp-controller="Emart">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Sname" class="control-label"></label>
@@ -34,7 +35,7 @@
 </div>
 
 <div>
-    <a asp-action="SellerRegistration">Create New Account</a>
+    <a  asp-action="SellerRegistration">Create New Account</a>
 </div>
 
 @section Scripts {
