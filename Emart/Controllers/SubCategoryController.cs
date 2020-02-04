@@ -2,54 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Emart.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Emart.Controllers
 {
-    public class ItemsController : Controller
+    public class SubCategoryController : Controller
     {
-        public readonly ItemsContext _context;
-        public ItemsController(ItemsContext context)
-        {
-            this._context = context;
-        }
-        public IActionResult AddItems()
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult AddItems(Items i)
-        {
-            _context.items.Add(i);
-            _context.SaveChanges();
-            SubCategory s = new SubCategory(i.SC_Id,i.SCname,i.CId,i.Cname);
-            //_context.SubCategory.Add(s);
-            return View();
-            
-        }
-
-
-        // GET: Items
+        // GET: SubCategory
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Items/Details/5
+        // GET: SubCategory/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Items/Create
+        // GET: SubCategory/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Items/Create
+        // POST: SubCategory/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -66,13 +44,13 @@ namespace Emart.Controllers
             }
         }
 
-        // GET: Items/Edit/5
+        // GET: SubCategory/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Items/Edit/5
+        // POST: SubCategory/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -89,13 +67,13 @@ namespace Emart.Controllers
             }
         }
 
-        // GET: Items/Delete/5
+        // GET: SubCategory/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Items/Delete/5
+        // POST: SubCategory/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

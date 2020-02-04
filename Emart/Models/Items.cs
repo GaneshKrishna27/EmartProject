@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Emart.Models
 {
-    public class Items
+    public class Items:SubCategory
     {
+        public Items(int sC_Id, string sCname, int cId, string cname) : base(sC_Id, sCname, cId, cname)
+        {
+        }
+
         [Key]
         public int Id { get; set; }
         
-        public int C_Id { get; set; }
-        public int SC_Id { get; set; }
+        
+        
         public int Price { get; set; }
         public string Itemname{get;set;}
-        public string Desc { get; set; }
+        public string IDesc { get; set; }
         public int StockNumber { get; set; }
         public string Remarks { get; set; } 
     }

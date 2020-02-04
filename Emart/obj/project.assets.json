@@ -8263,19 +8263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {}
+    "C:\\Users\\dilee\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EmartProject\\Emart\\Emart.csproj",
+      "projectUniqueName": "C:\\Users\\dilee\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\Emart.csproj",
       "projectName": "Emart",
-      "projectPath": "D:\\EmartProject\\Emart\\Emart.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\EmartProject\\Emart\\obj\\",
+      "projectPath": "C:\\Users\\dilee\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\Emart.csproj",
+      "packagesPath": "C:\\Users\\dilee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dilee\\Downloads\\EmartProject-master\\EmartProject-master\\Emart\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dilee\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
